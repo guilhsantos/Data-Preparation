@@ -1,11 +1,34 @@
-# Preparação de Dados para Modelagem
+# Preparação de dados para modelagem
 
-Este repositório contém um script em Python desenvolvido na aula de Data Preparation da DNC para a preparação de dados, visando a modelagem de projetos. O script é executado no Google Colab e abrange a limpeza, transformação e integração de diferentes conjuntos de dados.
+Pipeline em Python que limpa, enriquece e integra três bases de projetos, campanhas e apoiadores em uma tabela única, pronta para modelos preditivos.
 
-Para começar, foi feito o upload dos arquivos CSV (DataPrepFinal.csv, campaign.csv, invested.csv) quando solicitado.
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/guilhsantos/Data-Preparation/blob/main/DataPreparationPratica.ipynb)
 
-A preparação dos dados segue várias etapas. Primeiro, os dados são carregados para o ambiente do Colab. Em seguida, realiza-se a limpeza dos dados, removendo colunas irrelevantes, ajustando tipos de dados e tratando valores ausentes. Depois, novos atributos são criados para enriquecer o conjunto de dados, como a duração do projeto (time_range).
+## Problema
 
-Na etapa de mesclagem, integramos os diferentes conjuntos de dados (campaign.csv e invested.csv) ao DataFrame principal, unindo as informações de campanhas e apoiadores aos dados dos projetos. Finalmente, são feitas transformações adicionais e ajustes finais para garantir que os dados estejam prontos para a modelagem, removendo colunas intermediárias e garantindo a consistência dos tipos de dados.
+Os dados de projetos, campanhas e investimentos estavam em três arquivos separados, com tipos inconsistentes, colunas sem uso e valores faltando. Assim, nenhum modelo pode ser treinado.
 
-Este projeto é essencial para a criação de um conjunto de dados limpo e estruturado, pronto para ser usado em análises e modelagem preditiva.
+## Solução
+
+Um notebook que carrega `DataPrepFinal.csv`, `campaign.csv` e `invested.csv`, padroniza cada um e os une em um único conjunto consistente.
+
+## Resultado
+
+Uma base única e limpa, com tipos corretos, sem colunas intermediárias e com atributos novos, como a duração de cada projeto (`time_range`).
+
+## Como fiz
+
+1. **Limpeza:** remoção de colunas irrelevantes, ajuste de tipos e tratamento de nulos.
+2. **Enriquecimento:** criação de atributos derivados, como `time_range`.
+3. **Integração:** merge das campanhas e dos apoiadores na tabela de projetos.
+4. **Ajustes finais:** remoção de colunas intermediárias e checagem de consistência.
+
+Feito na aula de Data Preparation da formação Cientista de Dados (DNC).
+
+## Stack
+
+Python · pandas · Google Colab
+
+---
+
+Feito por [Guilherme Santos](https://portifolio-guilherme-santos.vercel.app) · [LinkedIn](https://www.linkedin.com/in/guilherme-santos-dataeng)
