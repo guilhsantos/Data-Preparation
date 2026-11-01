@@ -1,3 +1,5 @@
+🇧🇷 **Português** · [🇺🇸 English](README.en.md)
+
 # Preparação de dados para modelagem
 
 Pipeline em Python que limpa, enriquece e integra três bases de projetos, campanhas e apoiadores em uma tabela única, pronta para modelos preditivos.
